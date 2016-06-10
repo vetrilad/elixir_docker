@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+
+test:
+  override:
+    - docker run -it -w /elixir_docker -v ~/elixir_docker:/elixir_docker elixir ./scripts/circle.sh

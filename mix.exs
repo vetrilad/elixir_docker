@@ -27,6 +27,6 @@ defmodule CircleDocker.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:httpotion, git: "git@github.com:myfreeweb/httpotion.git"}]
   end
 end
